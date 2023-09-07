@@ -46,24 +46,34 @@
 
 
 
-1
-2
 
 
 
+class MyIterator:
+    def __init__(self,max_value):
+        self.max_value = max_value
+        self.current = 0
 
+    def __str__(self):
+        return "My name Iterator"
 
+    def __iter__(self):
+        print('iterator\n')
+        return self
 
+    def __next__(self):
+        print('next\n')
+        if self.current < self.max_value:
+            self.current += 1
+            return self.current
+        else:
+            raise StopIteration 
 
+my_iter = MyIterator(5)
+for num in my_iter:
+    print(num)
 
-
-
-
-
-
-
-
-
+    
 
 
 

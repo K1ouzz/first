@@ -77,34 +77,32 @@
 
 
 
-list = [10,20,30,40,50]
-list.append(60)
-list.remove(20)
-print(list)
+# list = [10,20,30,40,50]
+# list.append(60)
+# list.remove(20)
+# print(list)
 
-second_list = ("sef","fsef","efse")
-print(second_list[2])
-
-
-
-third_list = [1,2,3,4,5]
-dict={}
-for i in third_list:
-    dict[i]=i
-print(dict)
+# second_list = ("sef","fsef","efse")
+# print(second_list[2])
 
 
 
-second_dict = {"name":"Daniyar","age":18,"tel":"54654"}
-for i in second_dict:
-    print(i)
-print(second_dict["name"])
-print(second_dict.keys())
-print(second_dict.values())
-second_dict["xxx"]=1
-print(second_dict)
+# third_list = [1,2,3,4,5]
+# dict={}
+# for i in third_list:
+#     dict[i]=i
+# print(dict)
 
 
+
+# second_dict = {"name":"Daniyar","age":18,"tel":"54654"}
+# for i in second_dict:
+#     print(i)
+# print(second_dict["name"])
+# print(second_dict.keys())
+# print(second_dict.values())
+# second_dict["xxx"]=1
+# print(second_dict)
 
 
 
@@ -112,15 +110,29 @@ print(second_dict)
 
 
 
+import datetime
 
+# alarm = datetime.time(6,0,0) 
+# today= datetime.datetime.now()
+# delta= datetime.timedelta(days=1)
+# tomorow = today + delta 
 
+# print(datetime.datetime.combine(tomorow,alarm))
 
+today= datetime.datetime.now()
+delta= datetime.datetime(year=18,month=1,day=1)
+past=today-delta
+year = past.days // 365
+month = year // 12
+days = month % 31
+print(past.days % 365)
+x = datetime.datetime(year, month, days )
+print(x)
 
-
-
-
-
-
+print(past)
+print(year)
+print(month)
+print(days)
 
 
 

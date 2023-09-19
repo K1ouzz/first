@@ -111,6 +111,9 @@
 
 
 import datetime
+import imp
+from unittest import result
+import webbrowser
 
 # alarm = datetime.time(6,0,0) 
 # today= datetime.datetime.now()
@@ -119,57 +122,148 @@ import datetime
 
 # print(datetime.datetime.combine(tomorow,alarm))
 
-today= datetime.datetime.now()
-delta= datetime.datetime(year=18,month=1,day=1)
-past=today-delta
-year = past.days // 365
-month = year // 12
-days = month % 31
-print(past.days % 365)
-x = datetime.datetime(year, month, days )
-print(x)
+# today= datetime.datetime.now()
+# delta= datetime.datetime(year=18,month=1,day=1)
+# past=today-delta
+# year = past.days // 365
+# month = ((past.days % 365) // 12) + 1
+# days = month % 31
+# print(past.days % 365)
+# x = datetime.datetime(year, month, days )
+# print(x)
 
-print(past)
-print(year)
-print(month)
-print(days)
-
-
+# print(year)
+# print(year)
+# print(month)
+# print(days)
 
 
+# import openpyxl
+# from openpyxl import Workbook
+# import requests
+# import json
+# from docx import Document
+
+
+# wb = Workbook()
+# sheet = wb.active
+# for i in range(1,11):
+#     sheet.cell(row=i,column=1,value=i)
+
+# letters = "ABCDEFGHIJ"
+# for i , letter in enumerate(letters, 1):
+#     sheet.cell(row=i,column=2,value=letter)
+
+# wb.save('excel_file.xlsx')
+
+
+# wb = openpyxl.load_workbook('excel_file.xlsx')
+# sheet = wb.active
+
+# first_column = [sheet.cell(row=1, column=i).value for i in range(1,11)]
+
+# f_column = []
+# for i in range(1,11):
+#     f_column.append(sheet.cell(row=i, column=1).value)
+
+
+# second_column = [sheet.cell(row=2, column=i).value for i in range(1,11)]
+
+# s_column = []
+# for i in range(1,11):
+#     s_column.append(sheet.cell(row=i, column=2).value)
+
+
+# print("Первая строка:", f_column)
+# print("Вторая строка:", s_column)
+
+
+
+
+# import openpyxl
+# from openpyxl import Workbook
+import requests
+import json
+# from docx import Document
+
+
+# response = requests.get('https://jsonplaceholder.typicode.com/todos')
+# data=response.json()
+
+# with open('data.json', 'w') as json_file:
+#     json.dump(data, json_file)
+
+# with open('data.json', 'r') as json_file:
+#     data_dict = json.load(json_file)
+
+# for i in data_dict:
+#     if i['id'] % 2 ==0:
+#         print(i)
 
 
 
 
 
+import random
+list=[]
+for i in range(3):
+    list.append(random.randint(1,10))
+
+result = ", ".join(map(str, list))
 
 
+print(f"Hello  {result} these tabels are free")
 
+choice=int(input("выберите стол "))
 
+menu= {"суп":2000,"мясо":5000,"салат":1000,"мороженное":500,"чай":100}
 
+for i in menu:
+    print(f"{i}: {str(menu[i]).replace('[', '').replace(']', '')}")
 
+order=input("Что будете ? ")
 
+sym = []
+if order == "суп":
+    sum.append(2000)
+elif order =="мясо":
+    print("Итог 5000")
+elif order =="салат":
+    print("Итог 1000")
+elif order =="мороженное":
+    print("Итог 500")
+elif order =="чай":
+    print("Итог 100")
+else:
+    print("ERROR")
 
+print(sym)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+elsr=input("Что еще ?")
+if elsr == "нет":
+    print("Хорошо")
+elif elsr =="мясо":
+    print("Итог 5000")
+elif elsr =="салат":
+    print("Итог 1000")
+elif elsr =="мороженное":
+    print("Итог 500")
+elif elsr =="чай":
+    print("Итог 100")
+else:
+    print("ERROR")
+    
+sym = ()
+if order == "суп":
+    sum += 2000
+elif order =="мясо":
+    print("Итог 5000")
+elif order =="салат":
+    print("Итог 1000")
+elif order =="мороженное":
+    print("Итог 500")
+elif order =="чай":
+    print("Итог 100")
+else:
+    print("ERROR")
 

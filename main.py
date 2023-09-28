@@ -110,11 +110,6 @@
 
 
 
-import datetime
-import imp
-from unittest import result
-import webbrowser
-
 # alarm = datetime.time(6,0,0) 
 # today= datetime.datetime.now()
 # delta= datetime.timedelta(days=1)
@@ -182,6 +177,10 @@ import webbrowser
 
 # import openpyxl
 # from openpyxl import Workbook
+from operator import index
+from re import X
+from tkinter import Y
+from turtle import circle
 import requests
 import json
 # from docx import Document
@@ -204,66 +203,327 @@ import json
 
 
 
-import random
-list=[]
-for i in range(3):
-    list.append(random.randint(1,10))
+# import random
+# list=[]
+# for i in range(3):
+#     list.append(random.randint(1,10))
 
-result = ", ".join(map(str, list))
+# result = ", ".join(map(str, list))
 
 
-print(f"Hello  {result} these tabels are free")
+# print(f"Hello  {result} these tabels are free")
 
-choice=int(input("выберите стол "))
+# choice=int(input("выберите стол "))
 
-menu= {"суп":2000,"мясо":5000,"салат":1000,"мороженное":500,"чай":100}
+# menu= {"суп":2000,"мясо":5000,"салат":1000,"мороженное":500,"чай":100}
 
-for i in menu:
-    print(f"{i}: {str(menu[i]).replace('[', '').replace(']', '')}")
+# for i in menu:
+#     print(f"{i}: {str(menu[i]).replace('[', '').replace(']', '')}")
 
-order=input("Что будете ? ")
+# order=input("Что будете ? ")
 
-sym = []
-if order == "суп":
-    sum.append(2000)
-elif order =="мясо":
-    print("Итог 5000")
-elif order =="салат":
-    print("Итог 1000")
-elif order =="мороженное":
-    print("Итог 500")
-elif order =="чай":
-    print("Итог 100")
-else:
-    print("ERROR")
+# sym = []
+# if order == "суп":
+#     sum.append(2000)
+# elif order =="мясо":
+#     print("Итог 5000")
+# elif order =="салат":
+#     print("Итог 1000")
+# elif order =="мороженное":
+#     print("Итог 500")
+# elif order =="чай":
+#     print("Итог 100")
+# else:
+#     print("ERROR")
 
-print(sym)
+# print(sym)
 
-elsr=input("Что еще ?")
-if elsr == "нет":
-    print("Хорошо")
-elif elsr =="мясо":
-    print("Итог 5000")
-elif elsr =="салат":
-    print("Итог 1000")
-elif elsr =="мороженное":
-    print("Итог 500")
-elif elsr =="чай":
-    print("Итог 100")
-else:
-    print("ERROR")
+# elsr=input("Что еще ?")
+# if elsr == "нет":
+#     print("Хорошо")
+# elif elsr =="мясо":
+#     print("Итог 5000")
+# elif elsr =="салат":
+#     print("Итог 1000")
+# elif elsr =="мороженное":
+#     print("Итог 500")
+# elif elsr =="чай":
+#     print("Итог 100")
+# else:
+#     print("ERROR")
     
-sym = ()
-if order == "суп":
-    sum += 2000
-elif order =="мясо":
-    print("Итог 5000")
-elif order =="салат":
-    print("Итог 1000")
-elif order =="мороженное":
-    print("Итог 500")
-elif order =="чай":
-    print("Итог 100")
-else:
-    print("ERROR")
+# sym = ()
+# if order == "суп":
+#     sum += 2000
+# elif order =="мясо":
+#     print("Итог 5000")
+# elif order =="салат":
+#     print("Итог 1000")
+# elif order =="мороженное":
+#     print("Итог 500")
+# elif order =="чай":
+#     print("Итог 100")
+# else:
+#     print("ERROR")
+
+
+
+
+
+# try:
+#     number= int(input("Intput number: "))
+#     print("Input number: ", number)
+# except:
+#     print("Error")
+# print("It is all")
+
+
+# try:
+#     n = input('intput number: ')
+#     n = int(n)
+    # m = input('Intput second number: ')
+    # m = int(m)
+#     result = n / m
+#     print("Ок. вы вели число", n,"и", m)
+#     print("Результат их деления ", result)
+# except ValueError:
+#     print("Wrong")
+# except ZeroDivisionError:
+#     print("Деление на ноль")
+# finally:
+#     print("Конец")
+
+
+# a,b = int(input()), int(input())
+# try:
+#     if b == 0:
+#         raise ZeroDivisionError
+# except:
+#     print("Деление на 0")
+# print("Будет ли это напечатано?")
+
+
+# try:
+#     n = input('intput number: ')
+#     m = input('Intput second number: ')
+#     n = int(n)
+#     m = int(m)
+#     result = n + m
+#     print("Ок. вы вели число", n,"и", m)
+#     print("Результат их суммирование ", result)
+# except ValueError:
+#     print(str(n)+str(m))
+    
+
+
+# try:
+#     n = input('intput number: ')
+#     n = int(n)
+#     sum = 0
+#     mult = 1
+#     print("Ок. вы вели число", n)
+#     while n > 0:
+#         w = n % 10
+#         sum = sum + w
+#         mult = mult * w
+#         try:
+#             if w == 0:
+#                 raise ZeroDivisionError
+#         except:
+#             print("Деление на 0")
+#         n=n//10
+#     print("Результат их суммирование ",sum )
+#     print("Результат их произведение ",mult )
+# except ValueError:
+#     print("Деление на 0")
+
+
+# '''
+# чет,нечет = белый
+# нечет,чет=белый
+
+# нечет,нечет=черный
+# чет,чет = черный
+
+# '''
+
+
+# try:
+#     delenie_x = int(input('intput number: '))
+#     y1 = int(input('Intput second number: '))
+
+#     print("Ок. вы вели число", delenie_x, "и",y1)
+#     x1 = 0
+#     x2 = 0
+#     delenie_y = 0
+#     while delenie_x > 0:
+#         w = delenie_x % 10
+#         x1 = w
+#         x2 = 
+#         delenie_x=delenie_x//10
+#     print(x1)
+
+
+#     while y1 > 0:
+#         w = y1 % 10
+#         delenie_y = (delenie_y, w)
+#         y1=y1//10
+
+
+#     # if x
+
+
+#         # try:
+#         #     if w == 0:
+#         #         raise ZeroDivisionError
+#         # except:
+#         #     print("Деление на 0")
+#         # n=n//10
+# #     print("Результат их суммирование ", )
+# #     print("Результат их произведение ", )
+# except ValueError:
+#     print("Деление на 0")
+
+
+
+
+# class Prorammer():
+#     def __init__(self,salary,resposibilities):
+#         self.salary = salary
+#         self.resposibilities = resposibilities
+
+#     def write_code():
+#         print("Code")
+
+# ivan = Prorammer(450000,"web developer")
+
+# ivan.write_code()
+         
+
+
+
+# class Person():
+#     def __init__(self,name,day,city,country):
+#         self.name = name
+#         self.day = day
+#         self.__phone = ''
+#         self.city = city
+#         self.country = country
+#         self.__address = ''
+
+   
+#     def get_phone(self):
+#         return self.__phone
+
+#     def set_phone(self, phone):
+#         self.__phone = phone
+
+#     def set_address(self,address):
+#         self.__address = address
+
+#     def get_address(self):
+#         return self.__address
+
+
+
+# first = Person("Daniyar","22.11.2004","Astana","KZ")
+
+# first.set_phone(454512)
+# first.set_address("Kenesary")
+# print(first.get_phone())
+# print(first.get_address())
+
+
+
+
+
+# class City():
+#     def __init__(self,population,zona):
+#         # self.name = name
+#         # self.region = region
+#         # self.__phone = ''
+#         self.population = population
+#         # self.country = country
+#         # self.__index = ''
+#         self.zona = zona
+
+   
+    # def get_phone(self):
+    #     return self.__phone
+
+    # def set_phone(self, phone):
+    #     self.__phone = phone
+
+    # def set_index(self,index):
+    #     self.__index = index
+
+    # def get_index(self):
+    #     return self.__index
+
+    # def __add__(self,population):
+    #     return self.zona + population.zona
+
+
+# first= City(5,5)
+# second = City(6,8)
+# print(first+second)
+
+
+
+
+
+
+
+
+class Games():
+    def __init__(self,name,year):
+        self.year = year
+        self.name = name
+ 
+    def get_Name(self):
+        return self.name
+
+
+class PCGames(Games):
+    def __init__(self,kind,name,year):
+        super().__init__(name,year)
+        self.kind = kind
+
+    def get_Name(self):
+        return f'PC Games {self.name}'
+    
+
+class PS4Games(Games):
+    def __init__(self,price,name,year):
+        super().__init__(name,year)
+        self.price = price
+
+    def get_Name(self):
+        return f'PS4 Games {self.name}'
+
+class XboxGames(Games):
+    def __init__(self,gg,name,year):
+        super().__init__(name,year)
+        self.gg = gg
+
+    def get_Name(self):
+        return f'Xbox Games {self.name}'
+
+
+class MobileGames(Games):
+    def __init__(self,comfort,name,year):
+        super().__init__(name,year)
+        self.comfort = comfort
+
+    def get_Name(self):
+        return f'Mobile Games {self.name}'
+
+
+cock = MobileGames('Nope', 'Clash of Clans', 2013) 
+cor = MobileGames('Nope', 'Clash Royale', 2019) 
+
+
+
+print(cock.get_Name())
+print(cor.get_Name())
 
